@@ -30,6 +30,17 @@
         <activity
             android:name=".EmailActivity"
             android:exported="true" />
+        <activity
+            android:name=".ShopMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MenuPageActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

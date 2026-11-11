@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuPageRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menuPageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#459E9E"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/menuPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingHorizontal="20dp"
+        android:src="@drawable/menu_bottom"
+        android:scaleType="fitCenter"
+        android:contentDescription="하단 메뉴" />
+
+</LinearLayout>
