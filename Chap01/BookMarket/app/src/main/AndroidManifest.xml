@@ -24,6 +24,9 @@
         <activity
             android:name=".CountActivity"
             android:exported="true" />
+        <activity
+            android:name=".BookListActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/books_banner"
+                    android:scaleType="fitXY"
+                    android:contentDescription="추천 도서 배너" />
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/books_recommended1"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="첫 번째 추천 도서" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/books_recommenede2"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="두 번째 추천 도서" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/books_title"
+                android:scaleType="fitCenter"
+                android:contentDescription="BookList 도서목록" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/algorithmBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:src="@drawable/books_book1"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="쉽게 배우는 알고리즘" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="정가 : 22,000원"
+                        android:textColor="#444444"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/mysqlBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:src="@drawable/books_book2"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="처음 시작하는 MySQL" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="정가 : 34,000원"
+                        android:textColor="#444444"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/phpBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:src="@drawable/books_book3"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="쉽게 배우는 PHP 웹 프로그래밍" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="정가 : 30,000원"
+                        android:textColor="#444444"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/webBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="175dp"
+                        android:src="@drawable/books_book4"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="미라클 HTML5 CSS3 자바스크립트" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="정가 : 28,000원"
+                        android:textColor="#444444"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingHorizontal="20dp"
+        android:src="@drawable/menu_bottom"
+        android:scaleType="fitCenter"
+        android:contentDescription="하단 메뉴 아이콘" />
+
+</LinearLayout>
