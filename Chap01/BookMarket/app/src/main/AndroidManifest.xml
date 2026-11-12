@@ -59,6 +59,9 @@
         <activity
             android:name=".MemoActivity"
             android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
