@@ -1,8 +1,8 @@
 package com.example.bookmarket
 
-import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -212,8 +212,8 @@ class CalculatorActivity : AppCompatActivity() {
                                 "${format(left)} $operator " +
                                         "${format(right)} = ${format(answer)}"
 
+                            result.text = format(right)
                             input = format(answer)
-                            result.text = input
                             storedValue = null
                             operation = null
                             startNewNumber = true
@@ -261,15 +261,27 @@ class CalculatorActivity : AppCompatActivity() {
                     setPadding(0, 0, 0, 0)
                     setTextColor(Color.parseColor("#263238"))
 
-                    backgroundTintList = ColorStateList.valueOf(
-                        Color.parseColor(
-                            if (label == "=") {
-                                "#F47721"
-                            } else {
-                                "#E3E5E5"
-                            }
+                    backgroundTintList = null
+
+                    background = GradientDrawable().apply {
+                        shape = GradientDrawable.RECTANGLE
+                        cornerRadius = dp(12).toFloat()
+
+                        setColor(
+                            Color.parseColor(
+                                if (label == "=") {
+                                    "#F47721"
+                                } else {
+                                    "#E3E5E5"
+                                }
+                            )
                         )
-                    )
+
+                        setStroke(
+                            dp(1),
+                            Color.parseColor("#A6ADB0")
+                        )
+                    }
 
                     contentDescription = when (label) {
                         "AC" -> "전체 초기화"
@@ -319,12 +331,13 @@ class CalculatorActivity : AppCompatActivity() {
         dialog.show()
 
         val dialogWidth = minOf(
-            dp(340),
-            (resources.displayMetrics.widthPixels * 0.9f).toInt()
+            dp(300),
+            (resources.displayMetrics.widthPixels * 0.86f).toInt()
         )
 
         dialog.window?.apply {
             setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
             setLayout(
                 dialogWidth,
                 ViewGroup.LayoutParams.WRAP_CONTENT

@@ -5,14 +5,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="12dp"
-    android:background="#123C4B">
+    android:background="@drawable/calculator_panel">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="14dp"
-        android:background="#A8BF7B">
+        android:background="@drawable/calculator_display">
 
         <TextView
             android:id="@+id/calculationExpression"
@@ -21,17 +21,17 @@
             android:minHeight="28dp"
             android:gravity="end|center_vertical"
             android:textColor="#344628"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/calculationResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="40dp"
+            android:minHeight="32dp"
             android:gravity="end|center_vertical"
             android:text="0"
             android:textColor="#263820"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
     </LinearLayout>
 
