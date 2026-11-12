@@ -41,6 +41,9 @@
             android:name=".MenuPageActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
