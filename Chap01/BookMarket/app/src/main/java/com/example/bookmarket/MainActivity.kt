@@ -1,5 +1,6 @@
 package com.example.bookmarket
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.Toast
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
                 "도서 쇼핑몰을 시작합니다",
                 Toast.LENGTH_SHORT
             ).show()
+            startActivity(Intent(this, ShopMenuActivity::class.java))
         }
     }
 }

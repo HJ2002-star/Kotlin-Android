@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="#F9D19A"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="74dp"
+        android:contentDescription="한빛아카데미 건물"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hanbit" />
+
+    <TextView
+        android:id="@+id/marketMarkerInfo"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#333333"
+        android:textSize="11sp" />
+</LinearLayout>
