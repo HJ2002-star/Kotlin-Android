@@ -61,9 +61,13 @@ class ShopMenuActivity : AppCompatActivity() {
             startActivity(Intent(this, MarketInfoActivity::class.java))
         }
 
+        findViewById<View>(R.id.customerButton).setOnClickListener {
+            startActivity(Intent(this, CustomerBoardActivity::class.java))
+        }
+
         val menuLabels = mapOf(
             R.id.ebookButton to "E-Book",
-            R.id.customerButton to "고객센터",
+
             R.id.myPageButton to "나의페이지",
 
             R.id.settingsButton to "설정",
